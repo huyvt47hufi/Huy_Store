@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    @*kết nối với bootstrap.min.css*@
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/cssHome/Home.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            @*Row 1 của header*@
+                    <div class="row row-head-1">
+                        <div class="col-lg-2 box"> LOGO</div>
+                        <div class="col-lg-2 box">
+                            @* khu vực tìm kiếm *@
+                            <div class="row box">
+                                <form>
+                                    <input class="input-head-search" placeholder="Tìm kiếm...." />
+                                    <button class="btn-head-search">
+                                    </button>
+                                </form>
+                            </div>  
+                        </div>
+                        <div class="col-lg-8 box"> Menu</div>
+                    </div>
+            @*Row 2 của header*@
+                    <div class="row row-head-2">
+                        <div class="col-lg-2 box"> Item</div>
+                        <div class="col-lg-2 box"> Item</div>
+                        <div class="col-lg-2 box"> Item</div>
+                        <div class="col-lg-2 box"> Item</div>
+                        <div class="col-lg-2 box"> Item</div>
+                        <div class="col-lg-2 box"> Item</div>
+                    </div>
+        </header>
+        <main>
+            @*Row slide vs tin tức của main*@
+            <div class="row main-slide-tintuc">
+                <div class="col-lg-8 main-slide"></div>
+                <div class="col-lg-4 main-tintuc"></div>
+            </div>
+            @*Row show sản phẩm của header*@
+            <div class="row itemshow">
+
+            </div>
+        </main>
+        <footer>
+            @*Row 1 của footer*@
+            <div class="row row-foot-1">
+                <div class="col-lg-3 box">
+                    <ul>
+                        <li><a href="#">Giao hàng và thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Hướng dẫn mua online</a></li>
+                        <li><a href="#">Tìm hiểu mua trả góp</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 box">
+                    <ul>
+                        <li><a href="#">Giới thiệu shop</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Gửi góp ý khiếu nại</a></li>
+                        <li><a href="#">Tìm chi nhánh</a></li>
+                        <li><a href="#">...</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 box">
+                    <ul>
+                        <li><a href="#">Đặt hàng: 1900.6886 (24/24)</a></li>
+                        <li><a href="#">Khiếu nại: 1900.6886 (24/24)</a></li>
+                        <li><a href="#">Bảo hành: 1900.6886 (24/24)</a></li>
+                        <li><a href="#">Kỹ thuật: 1900.6886 (24/24)</a></li>
+                        <li><a href="#">Chị thỏ ngọc: 1900.6886 (24/24)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 box">
+                    <ul>
+                        <li><a href="#">Iconface/Youtube</a></li>
+                        <li><a href="#">Các website thuộc shop</a></li>
+                        <li><a href="#">web 1</a></li>
+                        <li><a href="#">web 2</a></li>
+                        <li><a href="#">web 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            @*Row 2 của header*@
+            <div class="row row-foot-2">
+                <p>© 2018. Công ty cổ phần Thế Giới Di Động. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.</p>
+            </div>
+        </footer>
+        
+
+    </div>
+
+
+
+
+
+    @*kết nối với bootstrap.js*@
+    <script type="text/javascript" src="~/js/bootstrap.js"></script>
+</body>
+</html>
