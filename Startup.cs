@@ -68,7 +68,7 @@ namespace HUY_Store
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Sneakers}/{action=Index}/{id?}");
             });
         }
     }

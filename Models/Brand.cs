@@ -9,7 +9,9 @@ namespace HUY_Store.Models
     public class Brand
     {
         [Key]
+        [Required]
         public string BrandId { get; set; }
+        [Required]
         public string BrandName { get; set; }
     }
 }

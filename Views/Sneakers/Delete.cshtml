@@ -10,30 +10,56 @@
 <div>
     <h4>Sneaker</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Image)
-        </dd>
-    </dl>
-    
     <form asp-action="Delete">
-        <input type="hidden" asp-for="ItemId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
-    </form>
+        <table class="table">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ItemId)</th>
+                <td>@Html.DisplayFor(model=>model.ItemId)<input asp-for="ItemId" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <td>@Html.DisplayFor(model => model.Name)<input asp-for="Name" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Size)</th>
+                <td>@Html.DisplayFor(model => model.Size)<input asp-for="Size" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.ColorId)</th>
+                <td>@Html.DisplayFor(model => model.ColorId)<input asp-for="ColorId" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.BrandId)</th>
+                <td>@Html.DisplayFor(model => model.BrandId)<input asp-for="BrandId" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Price)</th>
+                <td>@Html.DisplayFor(model => model.Price)<input asp-for="Price" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Image)</th>
+                <td>@Html.DisplayFor(model => model.Image)<input asp-for="Image" type="hidden" /></td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Stock)</th>
+                <td>@Html.DisplayFor(model => model.Stock)<input asp-for="Stock" type="hidden" /></td>
+            </tr>
+        </table>
+            <input type="hidden" asp-for="ItemId" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a asp-action="Index">Back to List</a>
+        </form>
 </div>
+<style>
+    .table {
+        width: 500px;
+    }
+
+        .table th {
+            border: 1px solid black;
+        }
+
+        .table td {
+            border: 1px solid black;
+        }
+</style>

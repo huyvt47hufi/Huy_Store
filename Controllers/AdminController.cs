@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using HUY_Store.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace HUY_Store.Controllers
 {

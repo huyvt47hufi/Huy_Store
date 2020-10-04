@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
 namespace HUY_Store.Models
 {
-    public class Admin
+    public class Color
     {
         [Key]
         [Required]
-        public string UserName { get; set; }
+        public string ColorId { get; set; }
         [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public string Name { get; set; }
+        [Required]
+        public string CSSColor { get; set; }
     }
 }

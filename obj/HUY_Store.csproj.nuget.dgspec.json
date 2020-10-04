@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Intern_Dsoft\\First_Web_With_DotNet_Core\\HUY_Store\\HUY_Store.csproj": {}
+    "E:\\Intern_Dsoft\\Github_huyvt47hufi\\Huy_Store\\HUY_Store.csproj": {}
   },
   "projects": {
-    "E:\\Intern_Dsoft\\First_Web_With_DotNet_Core\\HUY_Store\\HUY_Store.csproj": {
+    "E:\\Intern_Dsoft\\Github_huyvt47hufi\\Huy_Store\\HUY_Store.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Intern_Dsoft\\First_Web_With_DotNet_Core\\HUY_Store\\HUY_Store.csproj",
+        "projectUniqueName": "E:\\Intern_Dsoft\\Github_huyvt47hufi\\Huy_Store\\HUY_Store.csproj",
         "projectName": "HUY_Store",
-        "projectPath": "E:\\Intern_Dsoft\\First_Web_With_DotNet_Core\\HUY_Store\\HUY_Store.csproj",
+        "projectPath": "E:\\Intern_Dsoft\\Github_huyvt47hufi\\Huy_Store\\HUY_Store.csproj",
         "packagesPath": "C:\\Users\\huyvt\\.nuget\\packages\\",
-        "outputPath": "E:\\Intern_Dsoft\\First_Web_With_DotNet_Core\\HUY_Store\\obj\\",
+        "outputPath": "E:\\Intern_Dsoft\\Github_huyvt47hufi\\Huy_Store\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

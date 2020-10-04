@@ -97,17 +97,16 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@Html.DisplayFor(modelItem => item.ItemId)</td>
+                                <td>@item.ItemId</td>
                                 <td>@item.Name</td>
                                 <td>@item.Price</td>
                                 <td>@item.BrandId</td>
                                 <td>@item.Image</td>
                                 <td>
-                                    <form asp-controller="Sneakers">
-                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.ItemId">Edit</a>
-                                        <button class="btn btn-primary" style="background-color:red; color:black" type="submit" asp-action="Edit" formmethod="get" asp-route-id="@item.ItemId" >Edit</button>
-                                        <button class="btn btn-primary" style="background-color:lawngreen; color:black" type="submit" asp-action="Delete" asp-route-id="@item.ItemId" formmethod="delete">Delete</button>
-                                        <button class="btn btn-primary" style="background-color:yellow; color:black" type="submit" asp-action="Details" asp-route-id="@item.ItemId">Details</button>
+                                    <form>
+                                        <button class="btn btn-primary" style="background-color:red; color:black" type="submit" asp-controller="Sneakers" asp-action="Edit" formmethod="get" asp-route-id="@item.ItemId" >Edit</button>
+                                        <button class="btn btn-primary" style="background-color:lawngreen; color:black" type="submit" asp-controller="Sneakers" asp-action="Delete" asp-route-id="@item.ItemId" formmethod="delete">Delete</button>
+                                        <button class="btn btn-primary" style="background-color:yellow; color:black" type="submit" asp-controller="Sneakers" asp-action="Details" asp-route-id="@item.ItemId">Details</button>
                                     </form>
                                 </td>
                             </tr>

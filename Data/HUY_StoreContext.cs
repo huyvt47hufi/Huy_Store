@@ -15,7 +15,8 @@ namespace HUY_Store.Data
         }
 
         public DbSet<HUY_Store.Models.Sneaker> Sneaker { get; set; }
-
         public DbSet<HUY_Store.Models.Admin> Admin { get; set; }
+        public DbSet<HUY_Store.Models.Admin> Brand { get; set; }
+        public DbSet<HUY_Store.Models.Admin> Color { get; set; }
     }
 }
