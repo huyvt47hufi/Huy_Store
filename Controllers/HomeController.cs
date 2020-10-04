@@ -14,6 +14,7 @@ using System.Data.SqlClient;
 
 namespace HUY_Store.Controllers
 {
+    //Git change
     public class HomeController : Controller
     {
 
